@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="sources">
+      <UniqueIdentifier>{808ab3f2-f93e-4300-8af3-2754677140b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="includes">
+      <UniqueIdentifier>{871a4985-8fad-45f1-9663-ddd4dcc873a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="includes\strategies">
+      <UniqueIdentifier>{b2c73358-fd2e-4132-bbed-301e25258baf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\strategies">
+      <UniqueIdentifier>{7ca2ce9a-d2a4-4470-94f2-3774c09077fb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="strategy.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="strategies\default_strategy.h">
+      <Filter>includes\strategies</Filter>
+    </ClInclude>
+    <ClInclude Include="event_queue.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="order_callback.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="fx_engine.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="data_feeder.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="data_callback.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="order_event_queue.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="data_event_queue.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="dummy_callbacks.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl_handler.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="dummy_feeder.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="bar_collector.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="ta.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="engine_registry.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="optimizer.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="strategies\default_strategy_generator.h">
+      <Filter>includes\strategies</Filter>
+    </ClInclude>
+    <ClInclude Include="strategies\first_strategy_generator.h">
+      <Filter>includes\strategies</Filter>
+    </ClInclude>
+    <ClInclude Include="csv.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="strategy_generator.h">
+      <Filter>includes\strategies</Filter>
+    </ClInclude>
+    <ClInclude Include="strategies\first_strategy.h">
+      <Filter>includes\strategies</Filter>
+    </ClInclude>
+    <ClInclude Include="loader.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="gui_context.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="strategies\ladder\ladder_strategy_generator.h">
+      <Filter>includes\strategies</Filter>
+    </ClInclude>
+    <ClInclude Include="strategies\ladder\ladder_strategy.h">
+      <Filter>includes\strategies</Filter>
+    </ClInclude>
+    <ClInclude Include="gui_server.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="controlled_feeder.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="info_data.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="strategies\default_strategy.cpp">
+      <Filter>sources\strategies</Filter>
+    </ClCompile>
+    <ClCompile Include="event_queue.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="fx_engine.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="data_feeder.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="dummy_feeder.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrl_handler.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="bar_collector.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="ta.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="engine_registry.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="optimizer.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="strategies\default_strategy_generator.cpp">
+      <Filter>sources\strategies</Filter>
+    </ClCompile>
+    <ClCompile Include="strategies\first_strategy_generator.cpp">
+      <Filter>sources\strategies</Filter>
+    </ClCompile>
+    <ClCompile Include="strategy.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="csv.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="strategies\first_strategy.cpp">
+      <Filter>sources\strategies</Filter>
+    </ClCompile>
+    <ClCompile Include="loader.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="gui_context.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="strategies\ladder\ladder_strategy_generator.cpp">
+      <Filter>sources\strategies</Filter>
+    </ClCompile>
+    <ClCompile Include="strategies\ladder\ladder_strategy.cpp">
+      <Filter>sources\strategies</Filter>
+    </ClCompile>
+    <ClCompile Include="gui_server.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="controlled_feeder.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ladder_strategy.json" />
+  </ItemGroup>
+</Project>

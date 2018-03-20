@@ -1,0 +1,43 @@
+{
+    "mongodb":
+    {
+        "mongoip": "127.0.0.1",
+        "mongoport": 27017,
+        "mongouser": "",
+        "mongopass": ""
+    },
+    "logger":
+    {
+        "name": "fxquant",
+        "config": "log4cxx.cfg"
+    },
+    "csv":
+    {
+        "dir": "c:/reports"
+    },
+    "d_feeder":
+    {
+        "symbol": "eurusd",
+        "start_year": 2015,
+        "start_month": 1,
+        "start_day": 1,
+        "calculate_days": 2,
+        "use_cache": true
+    },
+    "optimizer":
+    {
+        "min_candle_start": 20,
+        "min_candle_end": 220,
+        "min_candle_step": 100,
+        "max_trades_per_candle_start": 1,
+        "max_trades_per_candle_end": 19,
+        "max_trades_per_candle_step": 6
+    },
+    "params":
+    {
+        "volume": 1000,
+        "sl": 50,
+        "tp": 50,
+        "lines_dist": 20
+    }
+}

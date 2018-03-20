@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="includes">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="inet_address.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="socket.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="socket.win32.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="tcp_socket.win32.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="winsock_init.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="debug.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="mongodb.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="config.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="event.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="system_dirs.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="logger.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="symbol.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="candle_factory.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="getopt.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="program_options.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="message.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="tcp_socket.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="pugixml.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="order.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="fix_client.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inet_address.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="socket.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="debug.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="mongodb.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="event.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="bar_data.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="tick_data.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="types.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="system_dirs.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="logger.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="symbol.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="candle_factory.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="message.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="order.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="fixed_point.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="fix_client.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

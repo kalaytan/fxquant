@@ -1,0 +1,8 @@
+bin/
+.vs/
+x64/
+fxquant.log
+fxquant.vcxproj.user
+*.csv
+reports/
+enc_temp_folder/

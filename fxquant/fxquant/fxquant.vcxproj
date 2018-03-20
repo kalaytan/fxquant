@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bar_collector.h" />
+    <ClInclude Include="csv.h" />
+    <ClInclude Include="ctrl_handler.h" />
+    <ClInclude Include="data_callback.h" />
+    <ClInclude Include="data_event_queue.h" />
+    <ClInclude Include="data_feeder.h" />
+    <ClInclude Include="dummy_callbacks.h" />
+    <ClInclude Include="dummy_feeder.h" />
+    <ClInclude Include="engine_registry.h" />
+    <ClInclude Include="fx_engine.h" />
+    <ClInclude Include="gui_context.h" />
+    <ClInclude Include="info_data.h" />
+    <ClInclude Include="loader.h" />
+    <ClInclude Include="controlled_feeder.h" />
+    <ClInclude Include="strategies\default_strategy_generator.h" />
+    <ClInclude Include="strategies\first_strategy.h" />
+    <ClInclude Include="strategies\first_strategy_generator.h" />
+    <ClInclude Include="strategies\ladder\ladder_strategy.h" />
+    <ClInclude Include="strategies\ladder\ladder_strategy_generator.h" />
+    <ClInclude Include="strategy_generator.h" />
+    <ClInclude Include="gui_server.h" />
+    <ClInclude Include="optimizer.h" />
+    <ClInclude Include="order_callback.h" />
+    <ClInclude Include="event_queue.h" />
+    <ClInclude Include="order_event_queue.h" />
+    <ClInclude Include="strategies\default_strategy.h" />
+    <ClInclude Include="strategy.h" />
+    <ClInclude Include="ta.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bar_collector.cpp" />
+    <ClCompile Include="csv.cpp" />
+    <ClCompile Include="ctrl_handler.cpp" />
+    <ClCompile Include="data_feeder.cpp" />
+    <ClCompile Include="engine_registry.cpp" />
+    <ClCompile Include="event_queue.cpp" />
+    <ClCompile Include="fx_engine.cpp" />
+    <ClCompile Include="gui_context.cpp" />
+    <ClCompile Include="loader.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="optimizer.cpp" />
+    <ClCompile Include="dummy_feeder.cpp" />
+    <ClCompile Include="controlled_feeder.cpp" />
+    <ClCompile Include="strategies\default_strategy.cpp" />
+    <ClCompile Include="strategies\default_strategy_generator.cpp" />
+    <ClCompile Include="strategies\first_strategy.cpp" />
+    <ClCompile Include="strategies\first_strategy_generator.cpp" />
+    <ClCompile Include="strategies\ladder\ladder_strategy.cpp" />
+    <ClCompile Include="strategies\ladder\ladder_strategy_generator.cpp" />
+    <ClCompile Include="strategy.cpp" />
+    <ClCompile Include="ta.cpp" />
+    <ClCompile Include="gui_server.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ladder_strategy.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\common\common.vcxproj">
+      <Project>{70451bc5-1b82-40c6-b5c6-75dd8d899c6f}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{6EDCA07A-4437-422A-88C4-A6A8B714250E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>fxquant</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>fxquant</TargetName>
+    <OutDir>$(SolutionDir)bin\fxquant\x86\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\tmp\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>fxquant</TargetName>
+    <OutDir>$(SolutionDir)bin\fxquant\x86_64\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\tmp\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>fxquant</TargetName>
+    <OutDir>$(SolutionDir)bin\fxquant\x86\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\tmp\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>fxquant</TargetName>
+    <OutDir>$(SolutionDir)bin\fxquant\x86_64\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)\tmp\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;LIBXML_STATIC;BSON_STATIC;CURL_STATICLIB;MONGOCXX_STATIC;BSONCXX_STATIC;LOG4CXX_STATIC;APR_DECLARE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\bat-libs\msvc15\include\openssl-0.9.8;$(SolutionDir)common;$(SolutionDir)..\bat-libs\msvc15\include;$(SolutionDir);$(ProjectDir);$(ProjectDir)strategies</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\bat-libs\msvc15\lib\x86\debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>apr-1.lib;aprutil-1.lib;log4cxx.lib;libbsoncxx.lib;libmongocxx.lib;bson-static-1.0.lib;mongoc-static-1.0.lib;quickfix.lib;libeay32.lib;ssleay32.lib;ta_abstract_cdd.lib;ta_abstract_cmd.lib;ta_common_cdd.lib;ta_common_cmd.lib;ta_func_cdd.lib;ta_func_cmd.lib;jsoncpp.lib;xml.lib;ws2_32.lib;wldap32.lib;rpcrt4.lib;mswsock.lib;Secur32.lib;bcrypt.lib;crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;LIBXML_STATIC;BSON_STATIC;BSONCXX_STATIC;MONGOC_STATIC;MONGOCXX_STATIC;LOG4CXX_STATIC;APR_DECLARE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\bat-libs\msvc15\include\openssl-0.9.8;$(SolutionDir)common;$(SolutionDir)..\bat-libs\msvc15\include;$(SolutionDir);$(ProjectDir);$(ProjectDir)strategies</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4267</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\bat-libs\msvc15\lib\x86_64\debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>apr-1.lib;aprutil-1.lib;log4cxx.lib;libbsoncxx.lib;libmongocxx.lib;bson-static-1.0.lib;mongoc-static-1.0.lib;quickfix.lib;libeay32.lib;ssleay32.lib;ta_abstract_cdd.lib;ta_abstract_cmd.lib;ta_common_cdd.lib;ta_common_cmd.lib;ta_func_cdd.lib;ta_func_cmd.lib;jsoncpp.lib;xml.lib;ws2_32.lib;wldap32.lib;rpcrt4.lib;mswsock.lib;Secur32.lib;bcrypt.lib;crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;LIBXML_STATIC;BSON_COMPILATION;CURL_STATICLIB;MONGOCXX_STATIC;BSONCXX_STATIC;LOG4CXX_STATIC;APR_DECLARE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\bat-libs\msvc15\include\openssl-0.9.8;$(SolutionDir)common;$(SolutionDir)..\bat-libs\msvc15\include;$(SolutionDir);$(ProjectDir);$(ProjectDir)strategies</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\bat-libs\msvc15\lib\x86\release</AdditionalLibraryDirectories>
+      <AdditionalDependencies>apr-1.lib;aprutil-1.lib;log4cxx.lib;libbsoncxx.lib;libmongocxx.lib;bson-static-1.0.lib;mongoc-static-1.0.lib;quickfix.lib;libeay32.lib;ssleay32.lib;ta_abstract_cdr.lib;ta_abstract_cmr.lib;ta_common_cdr.lib;ta_common_cmr.lib;ta_func_cdr.lib;ta_func_cmr.lib;jsoncpp.lib;xml.lib;ws2_32.lib;wldap32.lib;rpcrt4.lib;mswsock.lib;Secur32.lib;bcrypt.lib;crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;LIBXML_STATIC;BSON_STATIC;BSONCXX_STATIC;MONGOC_STATIC;MONGOCXX_STATIC;LOG4CXX_STATIC;APR_DECLARE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\bat-libs\msvc15\include\openssl-0.9.8;$(SolutionDir)common;$(SolutionDir)..\bat-libs\msvc15\include;$(SolutionDir);$(ProjectDir);$(ProjectDir)strategies</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4267</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\bat-libs\msvc15\lib\x86_64\release</AdditionalLibraryDirectories>
+      <AdditionalDependencies>apr-1.lib;aprutil-1.lib;log4cxx.lib;libbsoncxx.lib;libmongocxx.lib;bson-static-1.0.lib;mongoc-static-1.0.lib;quickfix.lib;libeay32.lib;ssleay32.lib;ta_abstract_cdr.lib;ta_abstract_cmr.lib;ta_common_cdr.lib;ta_common_cmr.lib;ta_func_cdr.lib;ta_func_cmr.lib;jsoncpp.lib;xml.lib;ws2_32.lib;wldap32.lib;rpcrt4.lib;mswsock.lib;Secur32.lib;bcrypt.lib;crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

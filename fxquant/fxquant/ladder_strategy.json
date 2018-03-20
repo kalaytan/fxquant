@@ -1,0 +1,58 @@
+{
+    "mongodb":
+    {
+        "mongoip": "127.0.0.1",
+        "mongoport": 27017,
+        "mongouser": "",
+        "mongopass": ""
+    },
+    "logger":
+    {
+        "name": "fxquant",
+        "config": "log4cxx.cfg"
+    },
+    "csv":
+    {
+        "dir": "c:/reports"
+    },
+    "d_feeder":
+    {
+        "symbol": "eurusd",
+        "start_year": 2015,
+        "start_month": 2,
+        "start_day": 27,
+        "calculate_days": 10,
+        "use_cache": true
+    },
+    "controlled_feeder":
+    {
+        "symbol": "eurusd",
+        "start_year": 2015,
+        "start_month": 2,
+        "start_day": 27,
+        "calculate_days": 10,
+        "use_cache": true,
+        "lookback_minutes": 200,
+        "speed_factor": 300
+    },
+    "optimizer":
+    {
+    },
+    "params":
+    {
+        "volume": 0.1,
+        "sl": 5000,
+        "tp": 5000,
+        "soft_tp": 25,
+        "step": 30,
+        "lvl_tolerance": 10,
+        "trades_per_lvl": 1,
+        "close_cycle_on_profit": 0,
+        "sections_in_half_range": 100,
+        "sections_offset": -20,
+        "max_lots_allowed": 0,
+        "max_spread": 15,
+        "comm_PLR": "Profitable Lots Reducer",
+        "plr": 0
+    }
+}
